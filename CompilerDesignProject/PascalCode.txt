@@ -1,0 +1,5 @@
+program one ;
+var b  : integer ;
+begin
+b := 5 * 2 - 1
+End .

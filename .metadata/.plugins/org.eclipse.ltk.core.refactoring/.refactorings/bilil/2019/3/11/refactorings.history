@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;b.QueNode.java&apos; to &apos;QueueNode.java&apos;&#x0D;&#x0A;- Original project: &apos;bilil&apos;&#x0D;&#x0A;- Original element: &apos;b.QueNode.java&apos;&#x0D;&#x0A;- Renamed element: &apos;b.QueueNode.java&apos;" description="Rename compilation unit &apos;QueNode.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;b{QueNode.java" name="QueueNode.java" references="false" stamp="1552546012906" version="1.0"/>
+</session>

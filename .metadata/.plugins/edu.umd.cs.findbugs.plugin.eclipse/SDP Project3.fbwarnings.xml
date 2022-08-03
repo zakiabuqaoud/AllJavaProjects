@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="18" timestamp="1640722798804" analysisTimestamp="1640722798620" release="">
+  <Project projectName="SDP Project3">
+    <Jar>C:\Users\ThinkPad\workspace\SDP Project3\bin\SDP\Course.class</Jar>
+    <AuxClasspathEntry>C:\Users\ThinkPad\workspace\SDP Project3\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_161\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\ThinkPad\workspace\SDP Project3\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" rank="9" abbrev="DLS" category="STYLE" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="NoHour" register="4" pc="14" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="NoHour" signature="I" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="14" end="14" startBytecode="12" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <SourceLine classname="SDP.Course" start="14" end="14" startBytecode="12" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="NoHour"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" rank="9" abbrev="DLS" category="STYLE" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="content" register="5" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="content" signature="Ljava/lang/String;" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="15" end="15" startBytecode="16" endBytecode="16" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <SourceLine classname="SDP.Course" start="15" end="15" startBytecode="16" endBytecode="16" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="content"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" rank="9" abbrev="DLS" category="STYLE" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="id" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="id" signature="I" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="11" end="11" startBytecode="5" endBytecode="5" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <SourceLine classname="SDP.Course" start="11" end="11" startBytecode="5" endBytecode="5" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="id"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" rank="9" abbrev="DLS" category="STYLE" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="name" register="2" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="name" signature="Ljava/lang/String;" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="12" end="12" startBytecode="7" endBytecode="7" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <SourceLine classname="SDP.Course" start="12" end="12" startBytecode="7" endBytecode="7" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="name"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD" priority="1" rank="9" abbrev="DLS" category="STYLE" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="price" register="3" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="price" signature="I" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="13" end="13" startBytecode="9" endBytecode="9" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <SourceLine classname="SDP.Course" start="13" end="13" startBytecode="9" endBytecode="9" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.IS_PARAMETER" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="price"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SHADOWS_FIELD" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NM_FIELD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="NoHour" signature="I" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SA_FIELD_DOUBLE_ASSIGNMENT" priority="2" rank="17" abbrev="SA" category="STYLE" first="9" last="10" removedByChange="true">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="157" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <Field classname="SDP.Course" name="content" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <Field classname="SDP.Course" name="name" signature="Ljava/lang/String;" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="16" end="16" startBytecode="34" endBytecode="34" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    <SourceLine classname="SDP.Course" start="16" end="16" startBytecode="34" endBytecode="34" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD" priority="1" rank="5" abbrev="SA" category="CORRECTNESS" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="134" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="NoHour" register="4" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="NoHour" signature="I" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="14" end="14" startBytecode="12" endBytecode="12" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD" priority="1" rank="5" abbrev="SA" category="CORRECTNESS" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="134" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="content" register="5" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="content" signature="Ljava/lang/String;" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="15" end="15" startBytecode="16" endBytecode="16" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD" priority="1" rank="5" abbrev="SA" category="CORRECTNESS" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="134" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="id" register="1" pc="5" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="id" signature="I" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="11" end="11" startBytecode="5" endBytecode="5" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD" priority="1" rank="5" abbrev="SA" category="CORRECTNESS" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="134" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="name" register="2" pc="7" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="name" signature="Ljava/lang/String;" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="12" end="12" startBytecode="7" endBytecode="7" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD" priority="1" rank="5" abbrev="SA" category="CORRECTNESS" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Method classname="SDP.Course" name="&lt;init&gt;" signature="(ILjava/lang/String;IILjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SDP.Course" start="10" end="17" startBytecode="0" endBytecode="134" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Method>
+    <LocalVariable name="price" register="3" pc="9" role="LOCAL_VARIABLE_NAMED"/>
+    <Field classname="SDP.Course" name="price" signature="I" isStatic="false" role="FIELD_DID_YOU_MEAN">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="13" end="13" startBytecode="9" endBytecode="9" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" first="11" last="11" removedByChange="true">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="NoHour" signature="I" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="14" end="14" startBytecode="22" endBytecode="22" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" first="1" last="14" removedByChange="true">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="content" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="15" end="15" startBytecode="28" endBytecode="28" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" first="11" last="11" removedByChange="true">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="id" signature="I" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="11" end="11" startBytecode="6" endBytecode="6" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" first="11" last="11" removedByChange="true">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="12" end="12" startBytecode="11" endBytecode="11" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="18" abbrev="UrF" category="STYLE" first="11" last="11" removedByChange="true">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="price" signature="I" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="13" end="13" startBytecode="16" endBytecode="16" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="content" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UwF" category="STYLE" first="4">
+    <Class classname="SDP.Course">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Class>
+    <Field classname="SDP.Course" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="SDP.Course" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+    </Field>
+    <SourceLine classname="SDP.Course" start="20" end="20" startBytecode="20" endBytecode="20" sourcefile="Course.java" sourcepath="SDP/Course.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 28 Dec 2021 22:16:32 +0200" total_classes="1" referenced_classes="10" total_bugs="13" total_size="16" num_packages="1" java_version="1.8.0_161" vm_version="25.161-b12" cpu_seconds="0.33" clock_seconds="0.19" peak_mbytes="535.38" alloc_mbytes="455.50" gc_seconds="0.01" priority_2="3" priority_1="10">
+    <PackageStats package="SDP" total_bugs="13" total_types="1" total_size="16" priority_2="3" priority_1="10">
+      <ClassStats class="SDP.Course" sourceFile="Course.java" interface="false" size="16" bugs="13" priority_2="3" priority_1="10"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="58" invocations="302" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="9496" standardDeviationMircosecondsPerInvocation="607"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="42" invocations="2" avgMicrosecondsPerInvocation="21151" maxMicrosecondsPerInvocation="37809" standardDeviationMircosecondsPerInvocation="16658"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="302" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="257" standardDeviationMircosecondsPerInvocation="36"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1640718409154" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1640718409157" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1640718461593" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1640718771124" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1640720730550" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1640721521826" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1640721530784" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1640721580096" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1640721623479" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1640721663952" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1640721671322" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1640721754684" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1640722408891" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1640722418211" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1640722428200" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1640722446157" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1640722580474" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1640722794045" release="" codeSize="16" numClasses="1"/>
+  </History>
+</BugCollection>

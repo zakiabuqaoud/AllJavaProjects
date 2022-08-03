@@ -1,0 +1,126 @@
+package gui;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.* ;
+
+public class Iya extends JFrame implements ActionListener {
+	Container c ;
+    JMenuBar set ;
+	JMenu m1,m2,m3,i1 ;
+	JMenuItem i2,i3,i4 ,i5,i6,i7,i8,i9,i10;
+	JButton b ;
+	JLabel l1 ;
+	
+	public Iya(){
+		setTitle("menu");
+		c=getContentPane();
+		b=new JButton("Exit");
+		set = new JMenuBar();
+	    setLayout(null);
+		
+		m1 = new JMenu("gogo");
+		i1 = new JMenu("gohan");
+		i2=new JMenuItem("ban");
+		i3 = new JMenuItem("fidel");
+		i4 = new JMenuItem("goten");
+		i5 = new JMenuItem("tshe tshe");
+		
+		m2 = new JMenu("vegeta");
+		i6 = new JMenuItem ("bolma");
+		i7 = new JMenuItem ("tranks");
+		i8 = new JMenuItem ("bola");
+		
+		m3 = new JMenu("kirleen");
+		i9= new JMenuItem("maron");
+		i10 = new JMenuItem("18");
+		
+		c.setBackground(Color.RED);
+		c.add(set,BorderLayout.NORTH);
+		set.add(m1);
+		set.add(m2);
+		set.add(m3);
+		
+		m1.add(i1);
+		i1.add(i2);
+		i1.add(i3);
+		m1.add(i4);
+		m1.add(i5);
+		
+		m2.add(i6);
+		m2.add(i7);
+		m2.add(i8);
+		
+		m3.add(i9);
+		m3.add(i10);
+		
+		b.setBounds(20, 50, 100, 50);
+		
+		setSize(500,500);
+		setVisible(true);
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		i2.addActionListener(this);
+		i3.addActionListener(this);
+		i4.addActionListener(this);
+		i5.addActionListener(this);
+		i6.addActionListener(this);
+		i7.addActionListener(this);
+		i8.addActionListener(this);
+		i9.addActionListener(this);
+		i10.addActionListener(this);
+		
+		b.addActionListener(this);
+		
+		c.add(b);
+		/*setLayout(null);
+		b.setBounds(100,100,100,100);*/
+		// green is true
+		//***************************************
+		l1 = new JLabel("image");
+		l1.setIcon(new ImageIcon("C:\\Users\\sdc\\Desktop\\3dlat.com_14147965224.png"));
+		
+		//**************************************
+	}
+	
+	
+	
+	public void actionPerformed(ActionEvent e1){
+		if(e1.getSource()== i2)
+			JOptionPane.showMessageDialog(null,e1.getActionCommand());
+		if(e1.getSource()== i3)
+			JOptionPane.showMessageDialog(null,e1.getActionCommand());
+		if(e1.getSource()== i4)
+			JOptionPane.showMessageDialog(null,e1.getActionCommand());
+		if(e1.getSource()== i5)
+			JOptionPane.showMessageDialog(null,e1.getActionCommand());
+	      //„‘ﬂ·…
+		//„‘ﬂ·…
+		 if(e1.getSource()== i6)
+			JOptionPane.showMessageDialog(null,e1.getActionCommand() );
+	
+		 if(e1.getSource()== i7)
+			JOptionPane.showMessageDialog(null,e1.getActionCommand() );
+	
+		 if(e1.getSource()== i8)
+			JOptionPane.showMessageDialog(null,e1.getActionCommand() );
+		
+		 if(e1.getSource()== i9)
+				JOptionPane.showMessageDialog(null,e1.getActionCommand() );
+		 
+		 if(e1.getSource()== i10)
+				JOptionPane.showMessageDialog(null,e1.getActionCommand() );
+		
+		 if(e1.getSource()== b)
+			System.exit(0);
+	}
+	
+
+
+
+
+	public static void main (String[] args){
+	new Iya();
+	}
+	
+}

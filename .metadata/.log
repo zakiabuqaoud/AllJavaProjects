@@ -1,0 +1,2350 @@
+!SESSION 2021-12-28 20:52:16.631 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+This is a continuation of log file C:\Users\ThinkPad\workspace\.metadata\.bak_0.log
+Created Time: 2021-12-28 21:11:18.126
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:11:18.127
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:11:20.261
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:12:02.826
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:12:35.794
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2021-12-28 21:13:00.041
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:384)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 21:13:02.831
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:13:21.168
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2021-12-28 21:33:18.115
+!MESSAGE Unexpected exception: publishing result
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: publishing result
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.initializeRepository(UpdateSiteMetadataRepositoryFactory.java:112)
+	at org.eclipse.equinox.internal.p2.updatesite.metadata.UpdateSiteMetadataRepositoryFactory.load(UpdateSiteMetadataRepositoryFactory.java:59)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$9.run(MarketplaceCatalog.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Contains: 
+Contains: OK
+!SUBENTRY 1 this 8 0 2021-12-28 21:33:18.116
+!MESSAGE publishing result
+!SUBENTRY 2 unknown 8 1 2021-12-28 21:33:18.116
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2021-12-28 21:33:18.116
+!MESSAGE OK
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:43:11.070
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:43:26.523
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:43:35.567
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.ui 4 0 2021-12-28 21:45:30.880
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getInstantiatedQuickfixes(CheckstyleMarkerResolutionGenerator.java:102)
+	at net.sf.eclipsecs.ui.quickfixes.CheckstyleMarkerResolutionGenerator.getResolutions(CheckstyleMarkerResolutionGenerator.java:56)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:253)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:314)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:273)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:265)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getCompletionProposals(ProblemHover.java:205)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.deferredCreateContent(AbstractAnnotationHover.java:285)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover$AnnotationInformationControl.setInput(AbstractAnnotationHover.java:186)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1181)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1150)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:902)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:243)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:233)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 49 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 21:55:22.508
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 21:56:44.869
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 22:21:49.479
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 22:21:56.297
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 22:22:03.073
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 22:22:09.264
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-12-28 22:22:17.407
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2021-12-28 22:38:22.493
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/SDP Project3/src/SDP/ZAKI.java' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.findMaxProblemSeverity(Resource.java:1051)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.getPackageErrorTicksFromMarkers(ProblemsLabelDecorator.java:337)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.computeAdornmentFlags(ProblemsLabelDecorator.java:212)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.decorateImage(ProblemsLabelDecorator.java:170)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.decorateImage(JavaUILabelProvider.java:134)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaUILabelProvider.getImage(JavaUILabelProvider.java:149)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getImage(DelegatingStyledCellLabelProvider.java:195)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getImage(DecoratingStyledCellLabelProvider.java:173)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:121)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jdt.internal.ui.javaeditor.breadcrumb.BreadcrumbViewer.doUpdateItem(BreadcrumbViewer.java:384)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditorBreadcrumb$ProblemBreadcrumbViewer.doUpdateItem(JavaEditorBreadcrumb.java:118)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.updateItem(ResourceToItemsMapper.java:75)
+	at org.eclipse.jdt.internal.ui.viewsupport.ResourceToItemsMapper.resourceChanged(ResourceToItemsMapper.java:63)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditorBreadcrumb$ProblemBreadcrumbViewer.handleLabelProviderChanged(JavaEditorBreadcrumb.java:170)
+	at org.eclipse.jface.viewers.ContentViewer$1.labelProviderChanged(ContentViewer.java:99)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.fireProblemsChanged(ProblemsLabelDecorator.java:487)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator.access$0(ProblemsLabelDecorator.java:482)
+	at org.eclipse.jdt.ui.ProblemsLabelDecorator$1.problemsChanged(ProblemsLabelDecorator.java:462)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.runPendingUpdates(ProblemMarkerManager.java:241)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager.access$0(ProblemMarkerManager.java:224)
+	at org.eclipse.jdt.internal.ui.viewsupport.ProblemMarkerManager$1.runInUIThread(ProblemMarkerManager.java:212)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2021-12-28 22:38:22.494
+!MESSAGE Resource '/SDP Project3/src/SDP/ZAKI.java' does not exist.
+!SESSION 2022-01-02 03:04:35.197 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-02 03:05:18.563
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-01-03 17:53:29.479 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\OOP\Record.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\OOP\Record.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-03 17:54:19.028
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-01-03 17:55:54.570 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\OOP\Record.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\OOP\Record.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-03 17:56:02.914
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-01-03 18:04:27.849 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\OOP\FoodListAdapter.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\OOP\FoodListAdapter.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-03 18:04:36.644
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-01-03 23:20:49.394 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\MainActivity.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\MainActivity.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-03 23:21:16.401
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-01-04 02:32:51.722 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\CompleteReg.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 5 season 1\Mobile Computing\Practical\Android\javaClasses\CompleteReg.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-04 02:33:12.559
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-01-23 14:36:42.443 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-01-23 14:37:26.594
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-02-17 13:12:51.856 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-02-17 13:13:34.925
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 4 0 2022-02-17 13:13:39.007
+!MESSAGE Unhandled event loop exception during blocked modal context.
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:175)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:390)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:527)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:284)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:516)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:349)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3111)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1167)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1556)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1696)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4612)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Tree.getSelection(Tree.java:3446)
+	at org.eclipse.jface.viewers.TreeViewer.getSelection(TreeViewer.java:232)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:311)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setSelectionToWidget(AbstractTreeViewer.java:2547)
+	at org.eclipse.ui.navigator.CommonViewer.setSelectionToWidget(CommonViewer.java:446)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setSelectionToWidget(AbstractTreeViewer.java:2974)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1443)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1525)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:533)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:353)
+	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:510)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1456)
+	at org.eclipse.jface.viewers.StructuredViewer.setFilters(StructuredViewer.java:1623)
+	at org.eclipse.ui.internal.navigator.NavigatorFilterService.updateViewer(NavigatorFilterService.java:287)
+	at org.eclipse.ui.internal.navigator.resources.actions.WorkingSetActionProvider.setWorkingSetFilter(WorkingSetActionProvider.java:279)
+	at org.eclipse.ui.internal.navigator.resources.actions.WorkingSetActionProvider.setWorkingSetFilter(WorkingSetActionProvider.java:262)
+	at org.eclipse.ui.internal.navigator.resources.actions.WorkingSetActionProvider.setWorkingSet(WorkingSetActionProvider.java:309)
+	at org.eclipse.ui.internal.navigator.resources.actions.WorkingSetActionProvider.initWorkingSetFilter(WorkingSetActionProvider.java:257)
+	at org.eclipse.ui.internal.navigator.resources.actions.WorkingSetActionProvider$4.run(WorkingSetActionProvider.java:347)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 76 more
+!SESSION 2022-03-20 16:45:15.873 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 3 Season 2\جرافيك حاسوب\home work\h1\GraphicsObj.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 3 Season 2\جرافيك حاسوب\home work\h1\GraphicsObj.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-20 16:45:56.435
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-03-21 14:55:34.534 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-21 14:56:13.829
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:02:45.700
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:05:57.500
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:15:30.107
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:15:33.477
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:15:47.153
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:19:24.886
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:19:29.557
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:19:40.085
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:21:07.705
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:22:27.265
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:25:39.547
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:29:10.448
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:29:14.400
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:44:13.120
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 15:46:37.216
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2022-03-21 16:08:40.135
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [C:\Program Files\Java\jre1.8.0_161\lib\rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:500)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:93)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:77)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:62)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:575)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2022-03-21 16:08:40.151
+!MESSAGE C:\Program Files\Java\jre1.8.0_161\lib\rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2022-03-21 16:08:42.064
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [C:\Program Files\Java\jre1.8.0_161\lib\rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:500)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:93)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:77)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:62)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:575)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2022-03-21 16:08:42.064
+!MESSAGE C:\Program Files\Java\jre1.8.0_161\lib\rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 16:08:42.613
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 19:06:17.021
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 19:06:23.988
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 21:57:45.456
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 21:57:45.471
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 22:13:08.391
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 22:13:12.132
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 22:22:08.784
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 23:14:54.126
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 23:24:06.175
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 23:39:07.192
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-21 23:53:03.092
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:04:46.955
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:05:36.805
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:10:39.920
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:14:06.031
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:16:59.986
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:26:28.703
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:39:24.870
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:40:57.614
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:43:55.356
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 00:58:00.118
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 01:03:51.410
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-03-22 01:30:27.718 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Downloads\Compressed\ConceptProgramLangHomework1\src\ConceptProgramLangHomework1\MyTimeOne.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Downloads\Compressed\ConceptProgramLangHomework1\src\ConceptProgramLangHomework1\MyTimeOne.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-22 01:30:47.534
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-03-22 20:26:39.220 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-22 20:27:13.857
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 20:29:50.638
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 20:29:53.273
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 20:37:12.416
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 20:41:44.111
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 20:41:54.595
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 20:42:16.106
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-03-22 20:54:47.928 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-22 20:54:57.482
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-03-22 21:04:40.329
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-03-24 10:22:02.294 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-24 10:22:38.743
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-04-10 12:39:54.904 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-10 12:40:25.852
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-05 12:13:09.566 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-05 12:14:13.961
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 12:20:50.026
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 12:20:53.158
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 12:21:47.956
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-05 21:06:49.924 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-05 21:07:28.609
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 21:16:20.365
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 21:16:26.333
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 21:38:27.532
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 21:52:15.031
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.calls.rcp 2 1 2022-05-05 22:08:22.001
+!MESSAGE Cannot obtain JDT’s lookup environment (debug only).
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:377)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:130)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:122)
+	at org.eclipse.recommenders.internal.calls.rcp.CallCompletionSessionProcessor.startSession(CallCompletionSessionProcessor.java:102)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireStartSession(IntelligentCompletionProposalComputer.java:229)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:325)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:282)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:183)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2443)
+	at org.eclipse.swt.internal.BidiUtil.windowProc(BidiUtil.java:640)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 22:23:36.296
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 22:23:53.939
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 22:33:48.932
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 22:34:04.226
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 22:36:15.308
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 22:36:19.337
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 23:41:54.751
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 23:42:06.092
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-05 23:42:16.011
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-06 14:47:14.698 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-06 14:47:42.021
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-06 14:52:47.743
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-06 15:57:43.656
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-06 16:09:37.855
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-06 16:34:49.848
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-06 17:15:28.518
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-06 17:41:49.760
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-07 17:05:05.346 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-07 17:05:35.001
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:18:14.839
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:30:04.638
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:31:17.166
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:43:38.606
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:45:38.198
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:45:59.791
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:47:07.558
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 17:47:13.107
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:12:17.649
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:12:22.113
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:40:57.197
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:46:37.342
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:46:41.397
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:46:48.499
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:47:00.574
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:53:10.345
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:53:15.639
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 18:53:20.513
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 22:37:50.052
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 22:37:54.973
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 22:38:01.034
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 23:13:42.988
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 23:13:45.807
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 23:13:48.253
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 23:16:29.563
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 23:16:31.198
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-07 23:16:35.316
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-08 00:05:55.942 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-08 00:06:06.052
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-08 00:13:33.940 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 5 Season 2\concept programming languge\Home Work 2\ConceptProgramLangHomework2\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\Testing.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 5 Season 2\concept programming languge\Home Work 2\ConceptProgramLangHomework2\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\Testing.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-08 00:13:42.753
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-11 16:14:06.779 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-11 16:14:39.116
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-20 00:09:10.961 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-20 00:09:38.064
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-20 00:15:18.944 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Desktop\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\Testing.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Desktop\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\Testing.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-20 00:15:28.547
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-20 00:15:48.875 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Desktop\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\MyList.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Desktop\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\MyList.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-20 00:15:57.248
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-21 12:30:32.705 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-21 12:30:59.047
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 14:31:49.962
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 14:32:09.332
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 14:33:23.333
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 14:34:11.890
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 14:52:45.862
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 14:53:29.865
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-21 15:01:16.066 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-21 15:01:26.333
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:05:14.886
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:05:14.894
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-21 15:06:25.578 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-21 15:06:35.289
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:10:45.166
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:10:49.144
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:11:27.316
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:12:04.972
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:12:07.299
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:16:52.913
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:16:55.179
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:18:22.276
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 15:18:34.197
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:35:03.401
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:35:28.917
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:35:34.088
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:35:52.490
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:35:56.739
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:36:10.611
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:48:44.448
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:49:24.392
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:49:37.998
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 19:49:57.384
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 21:45:52.210
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 21:46:10.315
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 21:50:06.480
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 21:50:23.586
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:19:57.513
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:20:05.214
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:36:51.822
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:37:15.547
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:37:54.690
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:38:07.374
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:38:40.108
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 22:51:58.712
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:06:03.755
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:06:13.846
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:10:11.413
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:19:03.986
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:22:59.714
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:23:21.271
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:31:14.785
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:31:29.344
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:33:41.968
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:34:13.998
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:35:09.177
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:35:17.925
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:35:49.730
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:35:52.214
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:36:59.182
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:37:03.462
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:38:28.355
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:39:23.171
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:46:58.992
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:48:40.008
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:49:38.857
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:49:46.699
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:49:50.854
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:51:53.499
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:52:31.631
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:52:31.662
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:52:39.020
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-21 23:53:15.177
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:01:05.282
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:03:47.973
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:05:51.245
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:07:14.864
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:08:01.489
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:08:22.343
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:14:22.318
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:14:25.755
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:23:35.601
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-22 00:24:57.248
+!MESSAGE jre:jre:ovrm:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-22 10:43:47.182 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-22 10:44:21.031
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-26 16:09:06.891 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Desktop\New folder\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\Testing.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Desktop\New folder\ConceptProgramLangHomework2\src\ConceptProgramLangHomework2\Testing.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-26 16:09:37.090
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-27 20:22:23.543 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-27 20:22:49.361
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 20:56:28.909
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 20:56:31.799
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 20:56:35.877
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 20:58:46.071
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 20:59:31.682
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 20:59:33.947
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 20:59:40.242
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:01:41.400
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:01:52.007
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:03:39.733
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:05:15.690
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:06:02.569
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:06:04.319
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:06:12.817
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:08:38.295
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:10:08.903
+!MESSAGE jre:jre:ovrm:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:11:01.359
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:11:05.608
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:11:52.520
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:14:09.246
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:55:35.733
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:55:39.529
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:57:15.707
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:57:17.488
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:57:42.907
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:57:49.124
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:58:26.753
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 21:58:39.547
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:35:26.160
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:36:03.414
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:37:24.748
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:42:51.658
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:43:13.591
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:47:58.653
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:48:01.653
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:48:12.181
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:50:57.942
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:51:15.719
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-27 22:53:59.681
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-27 22:59:44.113 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\AppData\Local\Temp\Rar$DIa0.981\UserInterface.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\AppData\Local\Temp\Rar$DIa0.981\UserInterface.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-27 22:59:58.269
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-28 14:13:26.247 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-28 14:13:51.125
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:23:54.247
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:23:54.543
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:23:59.654
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:24:28.241
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:24:32.346
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:25:12.845
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:25:21.824
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:30:51.540
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:31:32.391
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:31:34.542
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:43:37.885
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:51:07.065
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:51:35.337
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:52:37.563
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:53:56.476
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 14:55:37.903
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 15:02:00.559
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 15:02:04.747
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 15:15:37.660
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 15:17:16.096
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 15:24:19.789
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 15:25:19.568
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2022-05-28 15:25:24.190
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from model repositories. Are you offline?
+!SESSION 2022-05-28 15:52:58.357 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-28 15:53:08.510
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-28 16:00:21.721 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-28 16:00:31.853
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-28 18:48:32.140 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product E:\University\Year 5 Season 2\concept programming languge\Project\Prog.  Langs. Concepts project\ProgLangsConceptsProject\src\UserInterface.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product E:\University\Year 5 Season 2\concept programming languge\Project\Prog.  Langs. Concepts project\ProgLangsConceptsProject\src\UserInterface.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-28 18:48:53.916
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-28 23:11:07.222 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-28 23:11:20.664
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-28 23:57:46.015 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Downloads\Telegram Desktop\Graph.java
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product C:\Users\ThinkPad\Downloads\Telegram Desktop\Graph.java
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-28 23:57:55.397
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2022-05-28 23:59:34.552 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-28 23:59:43.808
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ThinkPad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

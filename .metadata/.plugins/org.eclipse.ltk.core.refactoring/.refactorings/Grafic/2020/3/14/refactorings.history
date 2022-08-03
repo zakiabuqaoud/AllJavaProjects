@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Grafic.GraficEHomework1.java&apos; to &apos;GraphicsObj.java&apos;&#x0D;&#x0A;- Original project: &apos;Grafic&apos;&#x0D;&#x0A;- Original element: &apos;Grafic.GraficEHomework1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Grafic.GraphicsObj.java&apos;" description="Rename compilation unit &apos;GraficEHomework1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Grafic{GraficEHomework1.java" name="GraphicsObj.java" references="false" stamp="1585669474655" version="1.0"/>
+</session>
